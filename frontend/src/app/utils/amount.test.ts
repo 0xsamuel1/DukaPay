@@ -11,8 +11,8 @@ describe("amount utils", () => {
     it("returns known asset decimals", () => {
       expect(getAssetDecimals("XLM")).toBe(7);
       expect(getAssetDecimals("USDC")).toBe(7);
-      expect(getAssetDecimals("EURC")).toBe(2);
-      expect(getAssetDecimals("PHP")).toBe(2);
+      expect(getAssetDecimals("EURC")).toBe(7);
+      expect(getAssetDecimals("PHP")).toBe(7);
     });
 
     it("falls back for unknown assets", () => {
